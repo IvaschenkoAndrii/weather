@@ -11,7 +11,6 @@ mgr = owm.weather_manager()
 
 bot = telebot.TeleBot("5505413910:AAGnIzbNR99BrJRy4inbjRTfYL9r2IxOXQ0")  # токен бота
 
-
 @bot.message_handler(content_types=["text"])  # Декоратор @message_handler реагирует на входящие сообщение.
 def send_echo(message):
     try:  # проверка ошибки, если город не найден
